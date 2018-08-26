@@ -1,9 +1,9 @@
 var http = require('http')
 var url = 'http://www.imooc.com/learn/348'
 
-var cheerio = require('cheerio')
-
-function filterChapters(html) {
+var  cheerio  =  require（'cheerio'）
+//得得得
+function  filterChapters（html）、{
     //在服务器端处理HTML,cheerio是像Jquery一样的东西
     var $ = cheerio.load(html)
     var chapters = $('.chapter')
