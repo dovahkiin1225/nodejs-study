@@ -1,3 +1,3 @@
-import { InformationLogger } from './information-logger';
+import { InformationLogger } from "./information-logger";
 InformationLogger.logApplicationInformation();
 InformationLogger.logSystemInformation();
