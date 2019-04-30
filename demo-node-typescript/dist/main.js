@@ -93,40 +93,42 @@
 /*! exports provided: name, version, description, main, scripts, author, license, devDependencies, default */
 /***/ (function(module) {
 
-eval("module.exports = {\"name\":\"demo-node-typescript\",\"version\":\"0.0.1\",\"description\":\"用 TypeScript 开发 Node.js 程序\",\"main\":\"index.js\",\"scripts\":{\"test\":\"echo \\\"Error: no test specified\\\" && exit 1\",\"start\":\"webpack --progress --env.development\",\"start:prod\":\"webpack --progress\"},\"author\":\"yosion\",\"license\":\"ISC\",\"devDependencies\":{\"webpack\":\"^4.30.0\",\"webpack-cli\":\"^3.3.1\"}};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlLmpzb24uanMiLCJzb3VyY2VzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./package.json\n");
+eval("module.exports = {\"name\":\"demo-node-typescript\",\"version\":\"0.0.1\",\"description\":\"用 TypeScript 开发 Node.js 程序\",\"main\":\"index.js\",\"scripts\":{\"start\":\"webpack --progress --env.development --env.nodemon\",\"start:prod\":\"webpack --progress --env.nodemon\",\"build\":\"webpack --progress --env.development\",\"build:prod\":\"webpack --progress\",\"build:ci\":\"webpack\"},\"author\":\"yosion\",\"license\":\"ISC\",\"devDependencies\":{\"@types/node\":\"^10.14.6\",\"nodemon-webpack-plugin\":\"^4.0.8\",\"ts-loader\":\"^5.4.4\",\"typescript\":\"^3.4.5\",\"webpack\":\"^4.30.0\",\"webpack-cli\":\"^3.3.1\"}};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlLmpzb24uanMiLCJzb3VyY2VzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./package.json\n");
 
 /***/ }),
 
-/***/ "./src/information-logger.js":
+/***/ "./src/information-logger.ts":
 /*!***********************************!*\
-  !*** ./src/information-logger.js ***!
+  !*** ./src/information-logger.ts ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: InformationLogger */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const os = __webpack_require__(/*! os */ \"os\"); // os 模块提供了一些基本的系统操作函数\r\nconst { name, version, author } = __webpack_require__(/*! ../package.json */ \"./package.json\");\r\n\r\nmodule.exports = {\r\n  logApplicationInformation: () =>\r\n    console.log({\r\n      application: {\r\n        name,\r\n        version,\r\n        author\r\n      }\r\n    }),\r\n  logSystemInformation: () =>\r\n    console.log({\r\n      system: {\r\n        process,\r\n        platform: process.platform,\r\n        cpus: os.cpus().length\r\n      }\r\n    })\r\n};\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5mb3JtYXRpb24tbG9nZ2VyLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2luZm9ybWF0aW9uLWxvZ2dlci5qcz9lMGE2Il0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG9zID0gcmVxdWlyZShcIm9zXCIpOyAvLyBvcyDmqKHlnZfmj5DkvpvkuobkuIDkupvln7rmnKznmoTns7vnu5/mk43kvZzlh73mlbBcclxuY29uc3QgeyBuYW1lLCB2ZXJzaW9uLCBhdXRob3IgfSA9IHJlcXVpcmUoXCIuLi9wYWNrYWdlLmpzb25cIik7XHJcblxyXG5tb2R1bGUuZXhwb3J0cyA9IHtcclxuICBsb2dBcHBsaWNhdGlvbkluZm9ybWF0aW9uOiAoKSA9PlxyXG4gICAgY29uc29sZS5sb2coe1xyXG4gICAgICBhcHBsaWNhdGlvbjoge1xyXG4gICAgICAgIG5hbWUsXHJcbiAgICAgICAgdmVyc2lvbixcclxuICAgICAgICBhdXRob3JcclxuICAgICAgfVxyXG4gICAgfSksXHJcbiAgbG9nU3lzdGVtSW5mb3JtYXRpb246ICgpID0+XHJcbiAgICBjb25zb2xlLmxvZyh7XHJcbiAgICAgIHN5c3RlbToge1xyXG4gICAgICAgIHByb2Nlc3MsXHJcbiAgICAgICAgcGxhdGZvcm06IHByb2Nlc3MucGxhdGZvcm0sXHJcbiAgICAgICAgY3B1czogb3MuY3B1cygpLmxlbmd0aFxyXG4gICAgICB9XHJcbiAgICB9KVxyXG59O1xyXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/information-logger.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"InformationLogger\", function() { return InformationLogger; });\n/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! os */ \"os\");\n/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _package_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../package.json */ \"./package.json\");\nvar _package_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../package.json */ \"./package.json\", 1);\n\r\n\r\nclass InformationLogger {\r\n    static logApplicationInformation() {\r\n        console.log({\r\n            application: {\r\n                name: _package_json__WEBPACK_IMPORTED_MODULE_1__[\"name\"],\r\n                version: _package_json__WEBPACK_IMPORTED_MODULE_1__[\"version\"],\r\n            }\r\n        });\r\n    }\r\n    static logSystemInformation() {\r\n        console.log({\r\n            system: {\r\n                platform: process.platform,\r\n                cpus: os__WEBPACK_IMPORTED_MODULE_0___default.a.cpus().length\r\n            }\r\n        });\r\n    }\r\n}\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5mb3JtYXRpb24tbG9nZ2VyLnRzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2luZm9ybWF0aW9uLWxvZ2dlci50cz8wZmIwIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBvcyBmcm9tICdvcyc7XHJcbmltcG9ydCB7IG5hbWUsIHZlcnNpb24gfSBmcm9tICcuLi9wYWNrYWdlLmpzb24nO1xyXG5leHBvcnQgY2xhc3MgSW5mb3JtYXRpb25Mb2dnZXIge1xyXG4gICAgc3RhdGljIGxvZ0FwcGxpY2F0aW9uSW5mb3JtYXRpb24oKSB7XHJcbiAgICAgICAgY29uc29sZS5sb2coe1xyXG4gICAgICAgICAgICBhcHBsaWNhdGlvbjoge1xyXG4gICAgICAgICAgICAgICAgbmFtZSxcclxuICAgICAgICAgICAgICAgIHZlcnNpb24sXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9KTtcclxuICAgIH1cclxuICAgIHN0YXRpYyBsb2dTeXN0ZW1JbmZvcm1hdGlvbigpIHtcclxuICAgICAgICBjb25zb2xlLmxvZyh7XHJcbiAgICAgICAgICAgIHN5c3RlbToge1xyXG4gICAgICAgICAgICAgICAgcGxhdGZvcm06IHByb2Nlc3MucGxhdGZvcm0sXHJcbiAgICAgICAgICAgICAgICBjcHVzOiBvcy5jcHVzKCkubGVuZ3RoXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9KTtcclxuICAgIH1cclxufVxyXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/information-logger.ts\n");
 
 /***/ }),
 
-/***/ "./src/main.js":
+/***/ "./src/main.ts":
 /*!*********************!*\
-  !*** ./src/main.js ***!
+  !*** ./src/main.ts ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const informationLogger = __webpack_require__(/*! ./information-logger */ \"./src/information-logger.js\");\r\ninformationLogger.logApplicationInformation();\r\ninformationLogger.logSystemInformation();\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWFpbi5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYWluLmpzPzU2ZDciXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgaW5mb3JtYXRpb25Mb2dnZXIgPSByZXF1aXJlKFwiLi9pbmZvcm1hdGlvbi1sb2dnZXJcIik7XHJcbmluZm9ybWF0aW9uTG9nZ2VyLmxvZ0FwcGxpY2F0aW9uSW5mb3JtYXRpb24oKTtcclxuaW5mb3JtYXRpb25Mb2dnZXIubG9nU3lzdGVtSW5mb3JtYXRpb24oKTtcclxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/main.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _information_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./information-logger */ \"./src/information-logger.ts\");\n\r\n_information_logger__WEBPACK_IMPORTED_MODULE_0__[\"InformationLogger\"].logApplicationInformation();\r\n_information_logger__WEBPACK_IMPORTED_MODULE_0__[\"InformationLogger\"].logSystemInformation();\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWFpbi50cy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYWluLnRzPzc5NGYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5mb3JtYXRpb25Mb2dnZXIgfSBmcm9tICcuL2luZm9ybWF0aW9uLWxvZ2dlcic7XHJcbkluZm9ybWF0aW9uTG9nZ2VyLmxvZ0FwcGxpY2F0aW9uSW5mb3JtYXRpb24oKTtcclxuSW5mb3JtYXRpb25Mb2dnZXIubG9nU3lzdGVtSW5mb3JtYXRpb24oKTtcclxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/main.ts\n");
 
 /***/ }),
 
 /***/ 0:
 /*!***************************!*\
-  !*** multi ./src/main.js ***!
+  !*** multi ./src/main.ts ***!
   \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/main.js */"./src/main.js");
+module.exports = __webpack_require__(/*! ./src/main.ts */"./src/main.ts");
 
 
 /***/ }),
