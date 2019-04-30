@@ -1,0 +1,17 @@
+{
+  "name": "demo-node-typescript",
+  "version": "0.0.1",
+  "description": "用 TypeScript 开发 Node.js 程序",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --progress --env.development",
+    "start:prod": "webpack --progress"
+  },
+  "author": "yosion",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
