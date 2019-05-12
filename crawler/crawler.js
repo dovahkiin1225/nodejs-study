@@ -1,10 +1,12 @@
 var http = require('http')
-var url = 'http://www.imooc.com/learn/348'
+// var url = 'http://www.imooc.com/learn/348'    这个课程已经下架了
+var url = 'http://www.imooc.com/learn/857'
 
 var  cheerio  =  require('cheerio')
 //得得得
 function  filterChapters(html){
-    //在服务器端处理HTML,cheerio是像Jquery一样的东西
+    // cheerio 是一个 jQuery Core 的子集
+    // 在服务器端处理HTML,cheerio是像Jquery一样的东西
     var $ = cheerio.load(html)
     var chapters = $('.chapter')
 
